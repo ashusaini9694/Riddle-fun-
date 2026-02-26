@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 9</title>
+<style>
+body{font-family:Arial;text-align:center;background:#f093fb;padding:40px;}
+.box{background:white;padding:25px;border-radius:12px;max-width:400px;margin:auto;}
+input,button{padding:10px;margin-top:10px;width:90%;}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>Final Riddle</h2>
+<p>What has to be broken before you can use it?</p>
+<input id="ans">
+<button onclick="check()">Submit</button>
+</div>
+
+<script>
+function check(){
+let a=document.getElementById("ans").value.toLowerCase();
+if(a==="egg"){
+alert("🎉 Congratulations! You completed the game!");
+window.location="index.html";
+}else{
+alert("Wrong answer!");
+}
+}
+</script>
+</body>
+</html>
